@@ -1,7 +1,10 @@
 body{
-    background-image: url(./weathe3.jpg);
+    background-image: url(./w1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
     
 }
 .flex1{
@@ -11,7 +14,7 @@ body{
 #userCity{
     font-size: xx-large;
     font-weight: 700;
-    color: white;
+    color: whitesmoke;
 }
 #btn1{
     border-radius: 30px;
@@ -27,14 +30,14 @@ body{
 }
 
 #temp{
-    color: white;
+    color: whitesmoke;
     font-size: 90px;
     font-weight: 700;
 }
 #condition{
     font-size: xx-large;
     font-weight: 700;
-    color: white;
+    color: whitesmoke;
     margin-left: 200px;
 }
 
@@ -42,7 +45,7 @@ body{
     display: flex;
     justify-content: space-between;
     /* gap: 50px; */
-    color: white;
+    color: whitesmoke;
     margin-top: 0px;
     font-weight: 900;
 }

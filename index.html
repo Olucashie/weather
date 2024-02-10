@@ -24,8 +24,8 @@
             </div>
     
         </div>
-
-        <img id="img1" class="text-center" src="LightRainV3.svg" alt="">
+        <div id="show"></div>
+        
         <p id="temp" class="text-center"></p>
         <p id="condition" class="text-center"></p>
 
@@ -64,6 +64,7 @@
             let myGust = (convertedResponse.wind.gust)
             let myWind = Math.round(Number(mySpeed+myGust))
             
+           show.innerHTML = `<img id="img1" class="text-center" src="http://openweathermap.org/img/w/${convertedResponse.weather.icon}.png" alt="">`
             temp.innerHTML=`${Math.round(convertedResponse.main.temp)}℃`
             wind.innerHTML=`${myWind} km/h`
             humidity.innerHTML=`${convertedResponse.main.humidity}%`
@@ -75,6 +76,9 @@
 
 
         }
+        
+
+        
 
     </script>
 </body>
